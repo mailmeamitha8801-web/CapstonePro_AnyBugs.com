@@ -1,3 +1,5 @@
+const { expect } = require("@playwright/test");
+
 class ProductDetailPage
 {
   constructor(page)
@@ -10,7 +12,7 @@ class ProductDetailPage
 
    async prodImageVisible()
    {
-    await expect (this.prodMainImage).toBeVisible();
+    await expect(this.prodMainImage).toBeVisible();
 
    }
 
