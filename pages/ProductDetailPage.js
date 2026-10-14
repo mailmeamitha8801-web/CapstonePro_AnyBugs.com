@@ -2,17 +2,22 @@ const { expect } = require("@playwright/test");
 
 class ProductDetailPage
 {
-  constructor(page)
+  constructor(page,productName)
   {
     this.page=page;
     //globally declaring Product Image locator
-    this.prodMainImage=page.locator("div[class='ec_details_main_image ec_details_main_image_12_1 mag_enabled'] img[alt='Light Brown Purse']");
-    this.prodExpandImage= page.locator("div[class='ec_details_large_popup_main ec_details_large_popup_main_12_1'] img[alt='Light Brown Purse']");
+    this.prodMainImage=page.locator(`div.ec_details_main_image img[alt="${productName}"]`);
+    this.prodExpandImage= page.locator(`div.ec_details_large_popup_main img[alt="${productName}"]`);
+    this.prdImgClose=page.locator('.ec_details_large_popup_close');
    }
 
    async prodImageVisible()
    {
     await expect(this.prodMainImage).toBeVisible();
+    await this.prodMainImage.click();
+    await expect(this.prodExpandImage).toBeVisible();
+    await this.prdImgClose.click();
+
 
    }
 

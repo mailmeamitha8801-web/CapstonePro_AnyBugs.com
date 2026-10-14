@@ -5,11 +5,9 @@ class ListProducts{
 
         this.page=page;
 
-        //Storing the target Product locator to a variable
-        this.productLink=page.getByRole('link',{name:'Light Brown Purse'});
-
-       //member function to navigate to the anybug.com/find-bug page
+         
     }
+     //member function to navigate to the anybug.com/find-bug page
        async prdctsListView()
        {
 
@@ -18,8 +16,9 @@ class ListProducts{
      };
     
     //member function to locate the target product and then get the detailpage
-      async getProduct()
+      async getProduct(productName)
       {        
+        this.productLink=this.page.getByRole('link',{name: productName, exact: true});  
        await this.productLink.click();
 
     };

@@ -1,0 +1,23 @@
+    [
+      {
+  "billingDetails": {
+    "country": "India",
+    "firstName": "Fiona",
+    "lastName": "Arthner",
+    "companyName": "Test Company",
+    "address": "Infopark Road",
+    "city": "Kochi",
+    "state": "Kerala",
+    "zip": "682030",
+    "phone": "9876543210"
+  },
+  "contactDetails": {
+    "email": " ",
+    "retypeEmail": " ",
+    "firstName": "Meena",
+    "lastName": "baby",
+    "password": "TestPassword123!",
+    "retypePassword": "TestPassword123!"
+  }
+}
+]

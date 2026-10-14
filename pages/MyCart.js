@@ -1,9 +1,10 @@
 const { expect } = require("@playwright/test");
 
-class AddToCart{
+class MyCart{
 
-    constructor(page){
+    constructor(page,productName){
         this.page=page;
+         this.productName = productName;
         //locator mapping for the Product quantity addition
         this.qty=page.locator('.ec_plus');
 
@@ -17,7 +18,7 @@ class AddToCart{
         this.cartSubTotal=page.locator('#ec_cart_subtotal');
         this.shippingCharge=page.locator('#ec_cart_shipping');
         this.grandTotal=page.locator('#ec_cart_total');
-
+        this.chekoutpge= page.locator('.ec_cart_button.ec_cart_button_checkout');
 
     };
 
@@ -31,12 +32,11 @@ class AddToCart{
     //member function to check the cart with selected item
       async productCartVisibility()
       {
-        await expect(this.cartItem).toContainText('Light Brown Purse');
+        await expect(this.cartItem).toContainText(this.productName);
 
       }
 
       //member function to fetch cart totals
-
       async fetchCartTotal()
       {
         this.prdprice=await this.cartSubTotal.innerText();
@@ -44,10 +44,10 @@ class AddToCart{
         this.shipcharge=await this.shippingCharge.innerText();
         console.log("The Shipping charge is:", this.shipcharge);
         this.total=await this.grandTotal.innerText();
-        console.log("The Grandtotal is :",this.total);
+        console.log("The Grandtotal is :",this.total);    
+        await this.chekoutpge.click();    
 
       }
-    
-            
+                
 }
-module.exports={AddToCart};
+module.exports={MyCart};

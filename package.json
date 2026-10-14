@@ -13,6 +13,7 @@
     "@types/node": "^26.6.4"
   },
   "dependencies": {
-    "dotenv": "^18.0.5"
+    "dotenv": "^18.0.5",
+    "exceljs": "^4.4.0"
   }
 }

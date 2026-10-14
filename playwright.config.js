@@ -1,6 +1,6 @@
 const { expect, chromium, devices } = require("@playwright/test");
 require ('dotenv').config();
-console.log("BASEURL:", process.env.BASEURL);
+//console.log("BASEURL:", process.env.BASEURL);
 
 const config=({
   testdir:'./test',
