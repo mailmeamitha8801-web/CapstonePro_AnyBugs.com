@@ -1,0 +1,1 @@
+JavaScript timer delay: 106 ms

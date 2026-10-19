@@ -1,0 +1,13 @@
+Selected product: Light Brown Purse
+The user is now in Product List View 
+The user is now in the Brown Purse product page....!!!
+Product image displayed correctly...!!
+Product has been added to the cart...!!!
+Cart is updated with the added product...!!
+The Cart Subtotal is: $154.08
+The Shipping charge is: $7.99
+The Grandtotal is : $262.07
+The user is now at the checkout page....!!
+User account has been created for the user:
+User is now in the Shipping Page...!!!:
+The User is now in the Payment Page...!!!

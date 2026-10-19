@@ -5,14 +5,25 @@ require ('dotenv').config();
 const config=({
   testdir:'./test',
   //retries:1,
- // workers:3,
   fullyParallel: true,
+  workers:2,
   timeout:40*1000,
   expect:{
     timeout:5000,
   },
-  reporter:'html',
-  projects:[/*{
+  //reporter:'html',
+
+reporter: [
+['html', { 
+  outputFolder: 'playwright-report',
+  open: 'always' }],
+['allure-playwright', {
+resultsDir: 'allure-results'
+}]
+],
+
+  projects:[
+    /*{
 
  /* name:'Sapharie',
 

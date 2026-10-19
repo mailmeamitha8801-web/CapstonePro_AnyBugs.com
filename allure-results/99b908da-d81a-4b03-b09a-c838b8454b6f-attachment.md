@@ -1,0 +1,502 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests\visualBugCollection.spec.js >> Visual Bug-Broken Image Implanted Bug
+- Location: tests\visualBugCollection.spec.js:5:1
+
+# Error details
+
+```
+ReferenceError: visualBugPage is not defined
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - dialog "cookieconsent" [ref=e2]:
+    - generic [ref=e3]:
+      - text: "We use cookies to optimize our website and our service:"
+      - link "Cookie Policy" [ref=e4] [cursor=pointer]:
+        - /url: https://academybugs.com/cookie-policy-eu/
+    - generic [ref=e5]:
+      - button "Functional only" [ref=e6] [cursor=pointer]
+      - button "Accept cookies" [ref=e7] [cursor=pointer]
+  - generic [ref=e8]:
+    - link "Skip to content" [ref=e9] [cursor=pointer]:
+      - /url: "#sq-content"
+    - banner [ref=e10]:
+      - generic [ref=e11]:
+        - heading [level=3] [ref=e13]:
+          - link "AcademyBugs.com" [ref=e14] [cursor=pointer]:
+            - /url: https://academybugs.com/
+        - navigation [ref=e15]:
+          - list [ref=e17]:
+            - listitem [ref=e18]:
+              - link "Examples of Bugs" [ref=e19] [cursor=pointer]:
+                - /url: https://academybugs.com/
+            - listitem [ref=e20]:
+              - link "Types of Bugs" [ref=e21] [cursor=pointer]:
+                - /url: https://academybugs.com/types/
+            - listitem [ref=e22]:
+              - link "Find Bugs" [ref=e23] [cursor=pointer]:
+                - /url: https://academybugs.com/find-bugs/
+            - listitem [ref=e24]:
+              - link "Report Bugs" [ref=e25] [cursor=pointer]:
+                - /url: https://academybugs.com/report-bugs/
+            - listitem [ref=e26]:
+              - link "" [ref=e27] [cursor=pointer]:
+                - /url: "#"
+    - generic [ref=e29]:
+      - banner [ref=e30]:
+        - heading "Articles" [level=5] [ref=e32]
+      - main [ref=e35]:
+        - article [ref=e36]:
+          - figure [ref=e37]:
+            - link [ref=e38] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Why Do I Need To Use Financial Consulting Service?" [ref=e39]
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - heading [level=2] [ref=e42]:
+                - link "Why Do I Need To Use Financial Consulting Service?" [ref=e43] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e44]:
+                - generic [ref=e45]:
+                  - generic [ref=e46]: 
+                  - link [ref=e47] [cursor=pointer]:
+                    - /url: https://academybugs.com/why-do-i-need-to-use-financial-consulting-service/
+                    - time [ref=e48]: October 5, 2015
+                - generic [ref=e49]:
+                  - generic [ref=e50]: 
+                  - text: Comment Closed
+            - generic [ref=e51]:
+              - text: Praesent libero nisi, malesuada quis faucibus ac, ultricies ut risus. Ut a est sodales, rutrum odio at, accumsan augue. Sed ac nulla est. Integer vitae ipsum auctor, elementum lectus vel, ultricies felis. Proin condimentum metus aliquam lectus venenatis vestibulum. Curabitur fermentum diam ut ornare ultricies. Mauris facilisis ex quam, sit amet lacinia mi blandit eu. Proin dui quam, blandit vitae eros ac, rutrum tincidunt dui. Proin sed risus ac tellus condimentum aliquam sed ac odio. Nam facilisis dui eget odio faucibus efficitur. ultricies felis. Proin condimentum metus aliquam lectus venenatis vestibulum. Curabitur fermentum diam ut ornare ultricies. Mauris facilisis ex quam, sit amet lacinia mi blandit eu. Proin dui quam, blandit vitae eros ac....
+              - link "Read More" [ref=e53] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e54]: 
+            - generic [ref=e55]:
+              - generic [ref=e56]:
+                - generic [ref=e57]: 
+                - link "Brochure" [ref=e58] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Visiting card" [ref=e59] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+                - text: ","
+                - link "Websites" [ref=e60] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/websites/
+              - generic [ref=e61]:
+                - generic [ref=e62]: 
+                - link "Blog" [ref=e63] [cursor=pointer]:
+                  - /url: https://academybugs.com/tag/blog/
+                - text: ","
+                - link "Holiday" [ref=e64] [cursor=pointer]:
+                  - /url: https://academybugs.com/tag/holiday/
+                - text: ","
+                - link "House" [ref=e65] [cursor=pointer]:
+                  - /url: https://academybugs.com/tag/house/
+                - text: ","
+                - link "Maintainance" [ref=e66] [cursor=pointer]:
+                  - /url: https://academybugs.com/tag/maintainance/
+                - text: ","
+                - link "Travel" [ref=e67] [cursor=pointer]:
+                  - /url: https://academybugs.com/tag/travel/
+              - generic [ref=e68]:
+                - link [ref=e69] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e70]: 
+                - link [ref=e71] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e72]: 
+                - link [ref=e73] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e74]: 
+                - link [ref=e75] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e76]: 
+        - article [ref=e77]:
+          - figure [ref=e78]:
+            - link [ref=e79] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Compliance is not enough to thwart cyber attacks" [ref=e80]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - heading [level=2] [ref=e83]:
+                - link "Compliance is not enough to thwart cyber attacks" [ref=e84] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - generic [ref=e87]: 
+                  - link [ref=e88] [cursor=pointer]:
+                    - /url: https://academybugs.com/compliance-is-not-enough-to-thwart-cyber-attacks/
+                    - time [ref=e89]: October 5, 2015
+                - generic [ref=e90]:
+                  - generic [ref=e91]: 
+                  - text: Comment Closed
+            - generic [ref=e92]:
+              - text: Phasellus accumsan nibh odio, a tincidunt nunc condimentum non. Maecenas fringilla consectetur luctus. Nulla ut iaculis quam, pharetra porta libero. Phasellus et tristique orci, nec malesuada velit. Vestibulum non mattis tortor. Sed in diam vitae lacus varius placerat. Praesent posuere rhoncus suscipit. Vestibulum non euismod nulla. Suspendisse vel ante in arcu mattis ullamcorper vitae sed mauris. Nullam et justo tortor. Morbi quis urna enim. Vestibulum nec mattis diam. Ut tincidunt id odio efficitur ultrices. Maecenas congue, ex a blandit pellentesque, mi metus convallis mi, aliquet sagittis est risus aliquam ipsum. Phasellus placerat varius lectus vel pretium. Aenean dui tellus, tempus euismod suscipit in, porttitor in metus. Sed eu massa vitae enim auctor ullamcorper id quis ex. Curabitur vitae magna nulla. Nulla gravida sed diam non dictum. Praesent libero nisi, malesuada quis faucibus ac, ultricies ut risus. Ut a est sodales, rutrum odio at, accumsan augue. Sed ac nulla est. Integer vitae ipsum auctor, elementum lectus vel, ultricies felis. Proin condimentum metus aliquam...
+              - link "Read More" [ref=e94] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e95]: 
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - generic [ref=e98]: 
+                - link "Brochure" [ref=e99] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Graphics" [ref=e100] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/graphics/
+                - text: ","
+                - link "Visiting card" [ref=e101] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+              - generic [ref=e102]:
+                - link [ref=e103] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e104]: 
+                - link [ref=e105] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e106]: 
+                - link [ref=e107] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e108]: 
+                - link [ref=e109] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e110]: 
+        - article [ref=e111]:
+          - figure [ref=e112]:
+            - link [ref=e113] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Smart luggage firms close because of airline battery rules" [ref=e114]
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - heading [level=2] [ref=e117]:
+                - link "Smart luggage firms close because of airline battery rules" [ref=e118] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - generic [ref=e121]: 
+                  - link [ref=e122] [cursor=pointer]:
+                    - /url: https://academybugs.com/smart-luggage-firms-close-because-of-airline-battery-rules/
+                    - time [ref=e123]: October 5, 2015
+                - generic [ref=e124]:
+                  - generic [ref=e125]: 
+                  - text: Comment Closed
+            - generic [ref=e126]:
+              - text: Phasellus accumsan nibh odio, a tincidunt nunc condimentum non. Maecenas fringilla consectetur luctus. Nulla ut iaculis quam, pharetra porta libero. Phasellus et tristique orci, nec malesuada velit. Vestibulum non mattis tortor. Sed in diam vitae lacus varius placerat. Praesent posuere rhoncus suscipit. Vestibulum non euismod nulla. Suspendisse vel ante in arcu mattis ullamcorper vitae sed mauris. Nullam et justo tortor. Morbi quis urna enim. Vestibulum nec mattis diam. Ut tincidunt id odio efficitur ultrices. Maecenas congue, ex a blandit pellentesque, mi metus convallis mi, aliquet sagittis est risus aliquam ipsum. Phasellus placerat varius lectus vel pretium. Aenean dui tellus, tempus euismod suscipit in, porttitor in metus. Sed eu massa vitae enim auctor ullamcorper id quis ex. Curabitur vitae magna nulla. Nulla gravida sed diam non dictum. Praesent libero nisi, malesuada quis faucibus ac, ultricies ut risus. Ut a est sodales, rutrum odio at, accumsan augue. Sed ac nulla est. Integer vitae ipsum auctor, elementum lectus vel, ultricies felis. Proin condimentum metus aliquam...
+              - link "Read More" [ref=e128] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e129]: 
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e132]: 
+                - link "Brochure" [ref=e133] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Visiting card" [ref=e134] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+              - generic [ref=e135]:
+                - link [ref=e136] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e137]: 
+                - link [ref=e138] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e139]: 
+                - link [ref=e140] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e141]: 
+                - link [ref=e142] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e143]: 
+        - article [ref=e144]:
+          - figure [ref=e145]:
+            - link [ref=e146] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Cambridge Analytica starts bankruptcy proceedings in US" [ref=e147]
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - heading [level=2] [ref=e150]:
+                - link "Cambridge Analytica starts bankruptcy proceedings in US" [ref=e151] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: 
+                  - link [ref=e155] [cursor=pointer]:
+                    - /url: https://academybugs.com/paparza/
+                    - time [ref=e156]: October 5, 2015
+                - generic [ref=e157]:
+                  - generic [ref=e158]: 
+                  - text: Comment Closed
+            - generic [ref=e159]:
+              - text: Nullam et justo tortor. Morbi quis urna enim. Vestibulum nec mattis diam. Ut tincidunt id odio efficitur ultrices. Maecenas congue, ex a blandit pellentesque, mi metus convallis mi, aliquet sagittis est risus aliquam ipsum. Phasellus placerat varius lectus vel pretium. Aenean dui tellus, tempus euismod suscipit in, porttitor in metus. Sed eu massa vitae enim auctor ullamcorper id quis ex. Curabitur vitae magna nulla. Nulla gravida sed diam non dictum. Praesent libero nisi, malesuada quis faucibus ac, ultricies ut risus. Ut a est sodales, rutrum odio at, accumsan augue. Sed ac nulla est. Integer vitae ipsum auctor, elementum lectus vel, ultricies felis. Proin condimentum metus aliquam lectus venenatis vestibulum. Curabitur fermentum diam ut ornare ultricies. Mauris facilisis ex quam, sit amet lacinia mi blandit eu. Proin dui quam, blandit vitae eros ac, rutrum tincidunt dui. Proin sed risus ac tellus condimentum aliquam sed ac odio. Nam facilisis dui eget odio faucibus efficitur....
+              - link "Read More" [ref=e161] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e162]: 
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - generic [ref=e165]: 
+                - link "Brochure" [ref=e166] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Visiting card" [ref=e167] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+              - generic [ref=e168]:
+                - link [ref=e169] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e170]: 
+                - link [ref=e171] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e172]: 
+                - link [ref=e173] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e174]: 
+                - link [ref=e175] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e176]: 
+        - article [ref=e177]:
+          - figure [ref=e178]:
+            - link [ref=e179] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Take the next step to a great career" [ref=e180]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading [level=2] [ref=e183]:
+                - link "Take the next step to a great career" [ref=e184] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e187]: 
+                  - link [ref=e188] [cursor=pointer]:
+                    - /url: https://academybugs.com/take-the-next-step-to-a-great-career/
+                    - time [ref=e189]: October 5, 2015
+                - generic [ref=e190]:
+                  - generic [ref=e191]: 
+                  - text: Comment Closed
+            - generic [ref=e192]:
+              - text: Ut condimentum gravida odio in blandit. Integer nec consectetur neque, a ultricies orci. Nullam tincidunt odio eu sapien molestie molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin porttitor nulla libero, eu posuere odio efficitur ac. Sed euismod eleifend venenatis. Suspendisse facilisis sagittis felis, lobortis lobortis risus facilisis eget. Vivamus laoreet, quam et scelerisque sagittis, lorem velit laoreet enim, a mattis urna mauris mattis metus. Phasellus porta lobortis lorem, in tristique diam finibus vitae. Maecenas ex sem, auctor vel molestie eget, tincidunt a massa. Vestibulum semper tellus nulla, ut cursus tortor fermentum porta. Duis non facilisis purus, non scelerisque justo. Cras elit sapien, fringilla vel massa id, luctus scelerisque odio. Duis dictum nisi tortor, at volutpat ligula rhoncus vitae. Aenean scelerisque erat at metus laoreet, placerat pharetra ex mattis....
+              - link "Read More" [ref=e194] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e195]: 
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: 
+                - link "Brochure" [ref=e199] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Graphics" [ref=e200] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/graphics/
+                - text: ","
+                - link "Logo" [ref=e201] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/logo/
+                - text: ","
+                - link "Visiting card" [ref=e202] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+              - generic [ref=e203]:
+                - link [ref=e204] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e205]: 
+                - link [ref=e206] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e207]: 
+                - link [ref=e208] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e209]: 
+                - link [ref=e210] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e211]: 
+        - article [ref=e212]:
+          - figure [ref=e213]:
+            - link [ref=e214] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "Broadband speeds ‘far slower than in ads’" [ref=e215]
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - heading [level=2] [ref=e218]:
+                - link "Broadband speeds ‘far slower than in ads’" [ref=e219] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e220]:
+                - generic [ref=e221]:
+                  - generic [ref=e222]: 
+                  - link [ref=e223] [cursor=pointer]:
+                    - /url: https://academybugs.com/broadband-speeds-far-slower-than-in-ads/
+                    - time [ref=e224]: October 5, 2015
+                - generic [ref=e225]:
+                  - generic [ref=e226]: 
+                  - text: Comment Closed
+            - generic [ref=e227]:
+              - text: Ut condimentum gravida odio in blandit. Integer nec consectetur neque, a ultricies orci. Nullam tincidunt odio eu sapien molestie molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin porttitor nulla libero, eu posuere odio efficitur ac. Sed euismod eleifend venenatis. Suspendisse facilisis sagittis felis, lobortis lobortis risus facilisis eget. Vivamus laoreet, quam et scelerisque sagittis, lorem velit laoreet enim, a mattis urna mauris mattis metus. Phasellus porta lobortis lorem, in tristique diam finibus vitae. Maecenas ex sem, auctor vel molestie eget, tincidunt a massa. Vestibulum semper tellus nulla, ut cursus tortor fermentum porta. Duis non facilisis purus, non scelerisque justo. Cras elit sapien, fringilla vel massa id, luctus scelerisque odio. Duis dictum nisi tortor, at volutpat ligula rhoncus vitae. Aenean scelerisque erat at metus laoreet, placerat pharetra ex mattis....
+              - link "Read More" [ref=e229] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e230]: 
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - generic [ref=e233]: 
+                - link "Brochure" [ref=e234] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Visiting card" [ref=e235] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+                - text: ","
+                - link "Websites" [ref=e236] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/websites/
+              - generic [ref=e237]:
+                - link [ref=e238] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e239]: 
+                - link [ref=e240] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e241]: 
+                - link [ref=e242] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e243]: 
+                - link [ref=e244] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e245]: 
+        - article [ref=e246]:
+          - figure [ref=e247]:
+            - link [ref=e248] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "How VR could bring Glastonbury into your living room" [ref=e249]
+          - generic [ref=e250]:
+            - generic [ref=e251]:
+              - heading [level=2] [ref=e252]:
+                - link "How VR could bring Glastonbury into your living room" [ref=e253] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - generic [ref=e256]: 
+                  - link [ref=e257] [cursor=pointer]:
+                    - /url: https://academybugs.com/how-vr-could-bring-glastonbury-into-your-living-room/
+                    - time [ref=e258]: October 5, 2015
+                - generic [ref=e259]:
+                  - generic [ref=e260]: 
+                  - text: Comment Closed
+            - generic [ref=e261]:
+              - text: Praesent posuere rhoncus suscipit. Vestibulum non euismod nulla. Suspendisse vel ante in arcu mattis ullamcorper vitae sed mauris. Nullam et justo tortor. Morbi quis urna enim. Vestibulum nec mattis diam. Ut tincidunt id odio efficitur ultrices. Maecenas congue, ex a blandit pellentesque, mi metus convallis mi, aliquet sagittis est risus aliquam ipsum. Phasellus placerat varius lectus vel pretium. Aenean dui tellus, tempus euismod suscipit in, porttitor in metus. Sed eu massa vitae enim auctor ullamcorper id quis ex. Curabitur vitae magna nulla. Nulla gravida sed diam non dictum. Praesent libero nisi, malesuada quis faucibus ac, ultricies ut risus. Ut a est sodales, rutrum odio at, accumsan augue. Sed ac nulla est. Integer vitae ipsum auctor, elementum lectus vel, ultricies felis. Proin condimentum metus aliquam lectus venenatis vestibulum. Curabitur fermentum diam ut ornare ultricies. Mauris facilisis ex quam, sit amet lacinia mi blandit eu. Proin dui quam, blandit vitae eros ac, rutrum tincidunt dui. Proin sed risus ac tellus condimentum aliquam sed...
+              - link "Read More" [ref=e263] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e264]: 
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - generic [ref=e267]: 
+                - link "Brochure" [ref=e268] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Logo" [ref=e269] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/logo/
+              - generic [ref=e270]:
+                - link [ref=e271] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e272]: 
+                - link [ref=e273] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e274]: 
+                - link [ref=e275] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e276]: 
+                - link [ref=e277] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e278]: 
+        - article [ref=e279]:
+          - figure [ref=e280]:
+            - link [ref=e281] [cursor=pointer]:
+              - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - img "What happens when your pension fund runs out of money" [ref=e282]
+          - generic [ref=e283]:
+            - generic [ref=e284]:
+              - heading [level=2] [ref=e285]:
+                - link "What happens when your pension fund runs out of money" [ref=e286] [cursor=pointer]:
+                  - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+              - generic [ref=e287]:
+                - generic [ref=e288]:
+                  - generic [ref=e289]: 
+                  - link [ref=e290] [cursor=pointer]:
+                    - /url: https://academybugs.com/madision/
+                    - time [ref=e291]: October 5, 2015
+                - generic [ref=e292]:
+                  - generic [ref=e293]: 
+                  - text: Comment Closed
+            - generic [ref=e294]:
+              - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non imperdiet tellus, id varius risus. Aenean ac nibh at ex elementum interdum et non odio. Pellentesque congue arcu in augue tristique pretium. Pellentesque eget urna pretium, feugiat sem id, lacinia velit. Nam molestie diam nec molestie accumsan. Fusce dui nunc, egestas at eros sed, iaculis placerat diam. Sed erat ligula, tempor in auctor ut, varius a tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus accumsan nibh odio, a tincidunt nunc condimentum non. Maecenas fringilla consectetur luctus. Nulla ut iaculis quam, pharetra porta libero. Phasellus et tristique orci, nec malesuada velit. Vestibulum non mattis tortor. Sed in diam vitae lacus varius placerat. (more…)...
+              - link "Read More" [ref=e296] [cursor=pointer]:
+                - /url: https://academybugs.com/why-do-i-need-financial-consulting-services
+                - text: Read More
+                - generic [aria-hidden] [ref=e297]: 
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - generic [ref=e300]: 
+                - link "Brochure" [ref=e301] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/brochure/
+                - text: ","
+                - link "Graphics" [ref=e302] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/graphics/
+                - text: ","
+                - link "Visiting card" [ref=e303] [cursor=pointer]:
+                  - /url: https://academybugs.com/category/visiting-card/
+              - generic [ref=e304]:
+                - link [ref=e305] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e306]: 
+                - link [ref=e307] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e308]: 
+                - link [ref=e309] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e310]: 
+                - link [ref=e311] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [aria-hidden] [ref=e312]: 
+    - contentinfo [ref=e313]:
+      - generic [ref=e314]:
+        - generic [ref=e317]:
+          - generic:
+            - list:
+              - listitem [ref=e318]:
+                - link [ref=e319] [cursor=pointer]:
+                  - /url: https://www.utest.com/academy
+                  - img "uTest" [ref=e320]
+              - listitem [ref=e321]:
+                - link "Terms & Conditions" [ref=e322] [cursor=pointer]:
+                  - /url: https://www.utest.com/terms-and-conditions
+              - listitem [ref=e323]:
+                - link "Privacy Policy" [ref=e324] [cursor=pointer]:
+                  - /url: https://www.utest.com/privacy-policy
+        - text:      
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require('../fixtures/bug.fixture');
+  2  | const { VisualBugPage } = require("../pages/bugs/VisualBugPage");
+  3  | 
+  4  | 
+  5  | test('Visual Bug-Broken Image Implanted Bug', async({bugApp})=>{
+  6  | 
+  7  |     const visualbugpage = new VisualBugPage(bugApp.page);
+  8  | 
+  9  |         await bugApp.page.goto('https://academybugs.com/articles/');
+  10 | 
+  11 |         await expect(visualbugpage.postImage).toBeAttached();
+  12 | 
+> 13 |         const imageLoaded = await visualBugPage.postImage.evaluate(
+     |                             ^ ReferenceError: visualBugPage is not defined
+  14 |             img => img.complete && img.naturalWidth > 0
+  15 |         );
+  16 | 
+  17 |         expect(imageLoaded).toBe(false);
+  18 | 
+  19 | });
+```
