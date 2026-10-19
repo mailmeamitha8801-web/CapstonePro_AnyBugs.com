@@ -1,1 +1,0 @@
-Time taken after currency change: 82 ms
